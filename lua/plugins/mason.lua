@@ -12,8 +12,6 @@ return {
         "clangd",
         "bashls",
         "gopls",
-        "lua_ls",
-        "pylsp",
         "pylsp",
         "tsserver",
         -- add more arguments for adding more language servers

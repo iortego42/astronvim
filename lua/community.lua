@@ -10,6 +10,10 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.colorscheme.nord-nvim" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.color.transparent-nvim" },
+  { import = "astrocommunity.workflow.bad-practices-nvim" },
+  -- { import = "astrocommunity.workflow.hardtime-nvim" },
+  { import = "astrocommunity.workflow.bad-practice" },
   -- import/override with your plugins folder
 }
