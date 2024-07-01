@@ -24,7 +24,7 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
-        "stylua",
+        -- "stylua",
         -- add more arguments for adding more null-ls sources
       },
     },
@@ -39,6 +39,39 @@ return {
         "cppdbg",
         -- add more arguments for adding more debuggers
       },
+      -- handlers = {
+      --   codelldb = function()
+      --     local dap = require "dap"
+      --     local codelldb = require "mason-nvim-dap.mappings.adapters.codelldb"
+      --     dap.adapters.codelldb = {
+      --       type = "server",
+      --       port = "${port}",
+      --       executable = {
+      --         command = codelldb,
+      --         args = { "--port", "${port}" },
+      --       },
+      --     }
+      --   end,
+      --   c = function()
+      --     local dap = require "dap"
+      --     dap.configurations.c = {
+      --       {
+      --         name = "Debug with codelldb",
+      --         type = "codelldb",
+      --         request = "launch",
+      --         program = function()
+      --           return vim.fn.input {
+      --             prompt = "Path to executable: ",
+      --             default = vim.fn.getcwd() .. "/",
+      --             completion = "file",
+      --           }
+      --         end,
+      --         cwd = "${workspaceFolder}",
+      --         stopOnEntry = false,
+      --       },
+      --     }
+      --   end,
+      -- },
     },
   },
 }

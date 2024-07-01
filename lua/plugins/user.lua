@@ -4,8 +4,27 @@
 ---@type LazySpec
 return {
 
+  {
+    require("notify").setup {
+      background_colour = "#000000",
+      fps = 1,
+    },
+  },
   -- == Examples of Adding Plugins ==
-
+  "audibleblink/hackthebox.vim",
+  -- Light theme --
+  {
+    "cormacrelf/dark-notify",
+    event = "ColorScheme",
+    config = function()
+      require("dark_notify").run {
+        schemes = {
+          light = "catppuccin", -- your light theme
+          dark = "hackthebox", -- your dark thene
+        },
+      }
+    end,
+  },
   "andweeb/presence.nvim",
   {
     "ray-x/lsp_signature.nvim",

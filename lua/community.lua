@@ -7,13 +7,13 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.go" },
-  { import = "astrocommunity.pack.cpp" },
+  -- { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.colorscheme.github-nvim-theme" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.color.transparent-nvim" },
-  { import = "astrocommunity.workflow.bad-practices-nvim" },
+  -- { import = "astrocommunity.workflow.bad-practices-nvim" },
   -- { import = "astrocommunity.workflow.hardtime-nvim" },
-  { import = "astrocommunity.workflow.bad-practice" },
   -- import/override with your plugins folder
 }
