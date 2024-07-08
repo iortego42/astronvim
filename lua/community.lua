@@ -12,6 +12,7 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.colorscheme.github-nvim-theme" },
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme.nightfox-nvim" },
   { import = "astrocommunity.color.transparent-nvim" },
   -- { import = "astrocommunity.workflow.bad-practices-nvim" },
   -- { import = "astrocommunity.workflow.hardtime-nvim" },

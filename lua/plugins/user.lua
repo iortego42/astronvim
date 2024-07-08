@@ -19,8 +19,8 @@ return {
     config = function()
       require("dark_notify").run {
         schemes = {
-          light = "catppuccin", -- your light theme
-          dark = "hackthebox", -- your dark thene
+          light = "dayfox", -- your light theme
+          dark = "carbonfox", -- your dark thene
         },
       }
     end,
