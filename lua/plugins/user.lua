@@ -10,6 +10,52 @@ return {
       fps = 1,
     },
   },
+  {
+    "EdenEast/nightfox.nvim",
+    config = function()
+      require("nightfox").setup {
+        -- disable extra plugins that AstroNvim doesn't use (this is optional)
+        modules = {
+          barbar = false,
+          dashboard = true,
+          fern = false,
+          fidget = false,
+          gitgutter = false,
+          glyph_palette = false,
+          illuminate = false,
+          lightspeed = false,
+          lsp_saga = false,
+          lsp_trouble = false,
+          modes = false,
+          neogit = false,
+          nvimtree = false,
+          pounce = false,
+          sneak = false,
+          symbols_outline = false,
+          aerial = true,
+          cmp = true,
+          ["dap-ui"] = true,
+          diagnostic = true,
+          gitsigns = true,
+          native_lsp = true,
+          neotree = true,
+          notify = true,
+          symbol_outline = true,
+          telescope = true,
+          treesitter = true,
+          whichkey = true,
+        },
+        groups = {
+          all = {
+            -- add highlight group for AstroNvim's built in URL highlighting
+            HighlightURL = { style = "underline" },
+            NormalFloat = { link = "Normal" },
+          },
+        },
+      }
+    end,
+  },
+
   -- == Examples of Adding Plugins ==
   "audibleblink/hackthebox.vim",
   -- Light theme --

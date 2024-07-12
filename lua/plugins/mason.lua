@@ -12,7 +12,7 @@ return {
         "clangd",
         "bashls",
         "gopls",
-        "pylsp",
+        -- "pylsp",
         "tsserver",
         -- add more arguments for adding more language servers
       },
@@ -34,7 +34,7 @@ return {
     -- overrides `require("mason-nvim-dap").setup(...)`
     opts = {
       ensure_installed = {
-        "python",
+        -- "python",
         "bash",
         "cppdbg",
         -- add more arguments for adding more debuggers
