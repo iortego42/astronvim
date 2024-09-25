@@ -37,41 +37,54 @@ return {
         -- "python",
         "bash",
         "cppdbg",
+        "go",
         -- add more arguments for adding more debuggers
       },
-      -- handlers = {
-      --   codelldb = function()
-      --     local dap = require "dap"
-      --     local codelldb = require "mason-nvim-dap.mappings.adapters.codelldb"
-      --     dap.adapters.codelldb = {
-      --       type = "server",
-      --       port = "${port}",
-      --       executable = {
-      --         command = codelldb,
-      --         args = { "--port", "${port}" },
-      --       },
-      --     }
-      --   end,
-      --   c = function()
-      --     local dap = require "dap"
-      --     dap.configurations.c = {
-      --       {
-      --         name = "Debug with codelldb",
-      --         type = "codelldb",
-      --         request = "launch",
-      --         program = function()
-      --           return vim.fn.input {
-      --             prompt = "Path to executable: ",
-      --             default = vim.fn.getcwd() .. "/",
-      --             completion = "file",
-      --           }
-      --         end,
-      --         cwd = "${workspaceFolder}",
-      --         stopOnEntry = false,
-      --       },
-      --     }
-      --   end,
-      -- },
+      handlers = {
+        -- go = function()
+        --   local dap = require "dap"
+        --   dap.adapters.delve = {
+        --         type = "server",
+        --         port = "${port}",
+        --         executable = {
+        --             command = "/usr/bin/kitty",
+        --             args = { "dlv","dap", "-l", "127.0.0.1:${port}" },
+        --           },
+        --   }
+        --   end,
+        -- },
+        --   codelldb = function()
+        --     local dap = require "dap"
+        --     local codelldb = require "mason-nvim-dap.mappings.adapters.codelldb"
+        --     dap.adapters.codelldb = {
+        --       type = "server",
+        --       port = "${port}",
+        --       executable = {
+        --         command = codelldb,
+        --         args = { "--port", "${port}" },
+        --       },
+        --     }
+        --   end,
+        --   c = function()
+        --     local dap = require "dap"
+        --     dap.configurations.c = {
+        --       {
+        --         name = "Debug with codelldb",
+        --         type = "codelldb",
+        --         request = "launch",
+        --         program = function()
+        --           return vim.fn.input {
+        --             prompt = "Path to executable: ",
+        --             default = vim.fn.getcwd() .. "/",
+        --             completion = "file",
+        --           }
+        --         end,
+        --         cwd = "${workspaceFolder}",
+        --         stopOnEntry = false,
+        --       },
+        --     }
+        --   end,
+      },
     },
   },
 }
